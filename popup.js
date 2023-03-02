@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     let xhr = new XMLHttpRequest();
                     let url = "https://api.openai.com/v1/completions";
 
-                    let authtoken = `Bearer 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`;
+                    let authtoken = `Bearer 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`;
                     xhr.open("POST", url, true);
                     xhr.setRequestHeader("Content-Type", "application/json");
                     xhr.setRequestHeader("Method", "no-cors");
