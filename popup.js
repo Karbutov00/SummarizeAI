@@ -31,9 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     // send api request
                     let xhr = new XMLHttpRequest();
                     let url = "https://api.openai.com/v1/completions";
-                    //"https://api.openai.com/v1/engines/davinci-codex/completions";
-                    let authtoken =
-                        "Bearer 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";
+
+                    let authtoken = `Bearer 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`;
                     xhr.open("POST", url, true);
                     xhr.setRequestHeader("Content-Type", "application/json");
                     xhr.setRequestHeader("Method", "no-cors");
@@ -53,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             gptSays.innerText = "GPT says: ";
                             p.style.maxWidth = "fit-content";
                             p.innerHTML = summary;
+                            p.fontSize = "14px";
                             gptSays.marginBottom = "0px !important";
                             responseContainer.appendChild(gptSays);
                             responseContainer.appendChild(p);
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         model: "text-davinci-003",
                         max_tokens: 2000,
                         n: 1,
-                        prompt: "Summarize this: " + inputText,
+                        prompt: `Summarize this: ${inputText}.`,
                     });
                     xhr.send(data);
                     document.querySelector("#input").value = "";

@@ -11,13 +11,13 @@
         }
     ],
     "action": {
-        "default_icon": "redsnakehead.png",
+        "default_icon": "summarizeai.png",
         "default_popup": "popup.html"
     },
     "icons": {
-        "16": "redsnakehead.png",
-        "32": "redsnakehead.png",
-        "48": "redsnakehead.png",
-        "128": "redsnakehead.png"
+        "16": "summarizeai.png",
+        "32": "summarizeai.png",
+        "48": "summarizeai.png",
+        "128": "summarizeai.png"
     }
 }
